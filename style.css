@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+}
+
+:root {
+    --navbg: #57606f;
+    --rightcontbg: #dfe4ea;
+    --listelementbg: #f1f2f6;
+    
+  }
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: var(--navbg);
+}
+
+.navbar__title{
+    color: white;
+}
+
+.navbar__addbtn{
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    padding: 4px;
+}
+
+
+.maincontainer{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+.employeeslist__title{
+    margin-left: 40%;
+}
+
+.employeeslist{
+    width: 40%;
+    height: 480px;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+
+    
+}
+
+.employeeslist__employee{
+    background-color: var(--listelementbg);
+    padding: 1rem;
+    margin: 1rem;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 1rem;
+
+}
+
+
+
+.employeedetailscontainer{
+    width: 60%;
+}
+
+
+.employeedetails{
+    
+    padding: 1rem;
+    display: flex;
+    height: 450px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--rightcontbg);
+}
+
+.employeedetails__img{
+    height: 15rem;
+    width: 15rem;
+    border-radius: 50%;
+}
+
+.formcontainer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    backface-visibility: hidden;
+    background-color:rgba(141, 141, 141, 0.541);
+}
+
+.formcontainer__form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    box-shadow: 0 0 50px grey;
+}
+
+.formcontainer__form input{
+    height: 1rem;
+    width: 30rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    
+}
+
+
+/* .employeeslist__employee :hover,
+.selected{
+ background-color: red;
+ cursor: pointer;
+} */
+
+.selected{
+    background-color: red;
+}

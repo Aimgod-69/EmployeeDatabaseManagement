@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Data Management</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="navbar">
+    <h1 class="navbar__title">Employee Database Management</h1>
+    <button class="navbar__addbtn">Add Employee</button>
+</div>
+
+
+<!-- main container -->
+<div class="maincontainer">
+    <!-- Left Component (Employees List) -->
+    <div class="employeeslist">
+        <div class="employeeslist__title">Employees List</div>
+
+        <!-- temp -->
+
+    </div>
+
+
+
+    <!-- Right Component (Single Employee Detailed Info) -->
+    <div class="employeedetailscontainer">
+        <div class="employeedetailscontainer__title">Employee Details</div>
+    </div>
+</div>
+
+<!-- Form Container -->
+<div class="formcontainer">
+    <form class="formcontainer__form">
+        <div class="formcontainer__title">Add a new Employee</div>
+        <input type="text" name="firstName" placeholder="Firstname" required>
+        <input type="text" name="lastName" placeholder="Lastname" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="number" name="contactNumber" placeholder="Contact" required>
+        <input type="text" name="address" placeholder="Address" required>
+        <input type="date" name="dob" placeholder="Date Of Birth"required>
+        <input type="number" name="salary" placeholder="Salary" required>
+        <input type="text" name="imageUrl" placeholder="ImageURL(Optional)">
+        <input type="submit" style="height:auto; width:auto" value="Submit">
+    </form>
+</div>
+
+
+
+<script src="./script.js"></script>    
+</body>
+</html>
